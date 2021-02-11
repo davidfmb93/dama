@@ -1,0 +1,28 @@
+/* STATES */
+
+*.hide, .hide {
+	opacity: 0 !important;
+	pointer-events: none !important;
+	@include transition;
+}
+
+*.hidden, .hidden {
+	display: none !important;
+}
+
+*.disabled, .disabled {
+	opacity: .5;
+	pointer-events: none;
+}
+
+.waves {
+	position: relative;
+}
+
+.noClick {
+	pointer-events: none;
+}
+
+.noScroll {
+	overflow: hidden;
+}

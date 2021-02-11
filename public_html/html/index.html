@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Inicio </title>
+
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
+    
+    <!-- STYLES -->
+	<!-- <link rel="stylesheet" href="css/libraries/"> -->
+	<link rel="stylesheet" href="css/main.css?v=1">
+	<!-- <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="js/ie11CustomProperties.js"><\x2fscript>');</script> -->
+
+</head>
+<body>
+    
+    <!-- LOADER -->
+	<div class="loader">
+		<div class="loader__container">
+			<svg class="loader__content" viewBox="25 25 50 50">
+				<circle class="loader__circular" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+			</svg>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+	<!-- MODAL -->
+	<section class="modal hide" data-modal="minor">
+		<div class="modal__container pb30">
+			<!-- MODAL CONTENT -->
+			<div class="modal__content">
+				<h2 class="bigBox__title bigBox__title--l bigBox__title--xBold mb15">Lo sentimos</h2>
+				<p class="bigBox__text bigBox__text--l mb90">Para poder ingresar debes ser mayor de edad.</p>
+				<div class="w100 btn btn--border ml0 mr0">
+					<span class="btn__container modal__exit">Volver</span>
+				</div>
+			</div>
+			<!-- END MODAL CONTENT -->
+		</div>
+	</section>
+    <!-- END MODAL -->
+    
+    <!-- GENERAL CONTAINER -->
+	<div class="container container--general container--orange">
+
+		<!-- NOTICE -->
+		<section class="notice">
+			<a href="/" class="logo notice__logo">
+				<img src="img/logo.svg" alt="" class="logo__img">
+			</a>
+			<div class="w100"></div>
+			<img src="img/qr/qr.png" alt="" class="notice__qr">
+			<p class="notice__text ttU">Bienvenido al modulo drupal.</p>
+			<p class="notice__text ttU">Desarrollado por David Martinez</p>
+		</section>
+		<!-- END NOTICE -->
+
+		<section class="bigBox bigBox--limit mt40 mb20">
+			<div class="bigBox__container">
+				<div class="dF w100 mb40">
+					<!-- LOGO -->
+					<a href="#" class="logo mb20">
+						<img src="img/logo--beige.svg" alt="" class="logo__img">
+					</a>
+					<!-- END LOGO -->
+					<h1 class="ageBox__title beige">Para contagiarse de nuestra cultura cervercera debe ser mayor de edad</h1>
+				</div>
+				<!-- AGE BOX -->
+				<form action="#" class="ageBox">
+					<h1 class="ageBox__title mb10">¿Eres mayor de edad?</h1>
+					<!-- SWITCH -->
+					<section class="switch">
+						<span class="switch__indicator"></span>
+						<!-- <label for="adult-yes" class="switch__option">
+							Si
+							<input type="radio" name="adult" id="adult-yes" value="adult-yes" class="switch__option__radio">
+						</label>
+						<label for="adult-no" class="switch__option">
+							No
+							<input type="radio" name="adult" value="adult-no" id="adult-no" class="switch__option__radio">
+						</label> -->
+						<a href="/formulario.html" class="switch__option">
+							SI
+						</a>
+						<a href="/menor.html" class="switch__option">
+							NO
+						</a>
+					</section>
+					<!-- END SWITCH -->
+					<!-- FORM BOX -->
+					<div class="form__box pt20 pb10 hidden">
+						<input type="checkbox" name="checkbox" id="checkbox1" class="form__checkbox" checked>
+						<label for="checkbox1" class="form__label form__label--checkbox">Recordar datos</label>
+					</div>
+					<!-- END FORM BOX -->
+				</form>
+				<!-- END AGE BOX -->
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__container">
+					<div class="footer__nav">
+						<a href="https://www.bavaria.co/sites/default/files/AVISO%20DE%20PRIVACIDAD.pdf" target="_blank" class="footer__nav__item">Aviso de privacidad</a>
+						<a href="https://www.bavaria.co/sites/default/files/POL%C3%8DTICA%20DE%20PROTECCI%C3%93N%20DE%20DATOS%20GLOBAL.pdf" target="_blank" class="footer__nav__item">Politica de Protección Datos Global</a>
+						<a href="https://www.bavaria.co/sites/default/files/POL%C3%8DTICA%20DE%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES%20-COLOMBIA.pdf" target="_blank" class="footer__nav__item">Politica de Protección de datos Colombia</a>
+						<a href="https://www.bbccerveceria.com/sites/g/files/phfypu1326/f/legal/TERMINOS_%20Y_CONDICIONES.pdf" target="_blank" class="footer__nav__item">Términos y condiciones</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<p class="footer__terms">
+						Prohibese el expendio de bebidas embriagantes a menores de edad.
+						<br>
+						El exceso de alcohol es perjudicial para la salud. <span class="footer__terms__icons"></span>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div>
+	<!-- END GENERAL CONTAINER -->
+	
+	<!-- SCRITPS -->
+	<!-- <script src="js/libraries/ie11-custom-properties.js"></script> -->
+	<!-- <script src="js/libraries/"></script> -->
+	<script src="js/app.js?v=1"></script>
+
+</body>
+</html>

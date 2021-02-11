@@ -1,0 +1,55 @@
+/* TABS */
+
+.tabs {
+    width: 100%;
+    &__nav {
+        @include flex($fw:nowrap);
+        width: 100%;
+        min-height: 50px;
+        position: relative;
+        &__indicator {
+            display: block;
+            width: 10px;
+            height: 4px;
+            background: purple;
+            @include transition;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        &__item {
+            @include flex;
+            width: 100%;
+            padding: 10px;
+            background: red;
+            cursor: pointer;
+            @include transition;
+            &.active {
+                background: orange;
+                color: white;
+            }
+        }
+    }
+    &__container {
+        @include flex(flex-start, flex-start, nowrap,);
+        width: 100%;
+        position: relative;
+        left: 0;
+        background: green;
+        overflow-x: visible;
+        @include transition;
+    }
+    &__article {
+        // min-width: 100vw;
+        min-width: 100%;
+        position: relative;
+        // left: 100vw;
+        opacity: 0;
+        pointer-events: none;
+        @include transition;
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}

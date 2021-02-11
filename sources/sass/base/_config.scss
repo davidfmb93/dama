@@ -1,0 +1,121 @@
+/* CONFIGURATION */
+
+// ROOT
+:root {
+
+  // COLORS
+  --color-black: #000;
+  --color-lBlack: #292929;
+
+  --color-white: #FFF;
+
+  --color-lGray: #dfdfdf;
+
+  --color-red: #FF0000;
+
+  --color-success: #219c3e;
+  --color-warning: #d66519;
+  --color-information: #2476ce;
+
+}
+
+// MEDIAQUERIES
+$mediaqueries: (
+	hover: "(hover: hover)",
+	ie: "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)",
+	safari: "screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)",
+	safari2: "not all and (min-resolution:.001dpcm)",
+	mobS3: 360,
+	mobS2: 480,
+	mobS: 640,
+	mob: 767,
+	tabS: 820,
+	tab: 991,
+	lapS3: 1024,
+	lapS2: 1199,
+	lapS: 1280,
+	lap: 1367,
+	deskS: 1440,
+	desk: 1560,
+	deskB: 1680
+);
+
+// WIDTH
+$widthLimit: 1200px;
+
+// COLORS
+$black: #000;
+$lBlack: #231f20;
+$lBlack2: #292929;
+$lBlack3: #323232;
+
+$xdGray: #4A4A4A;
+$xdGray2: #212529;
+$gray: #838A96;
+$lGray: #ECECEF;
+$lGray2: #E7E9EE;
+$lGray3: #CCCFD6;
+$lGray4: #BFC2CB;
+$lGray5: #DDDEE4;
+$xlGray: #F7F8F9;
+
+$beige: #F5D9B3;
+$beigeL: #FCF8E7;
+$beigeY:#EFE1C2;
+
+$dOrange: #F41938;
+$orange: #FF6B00;
+
+$brown: #B0876F;
+
+$green: #009C00;
+
+$white: #FFF;
+
+$xdBlue: #11243D;
+$dBlue: #2D3F68;
+
+$mRed: #CE0E2D;
+$red: #EA0029;
+$red2 : #C90000;
+
+// ALERTS
+$success: var(--color-success);
+$warning: var(--color-warning);
+$error: $red;
+$information: var(--color-information);
+
+// FORMS
+$error: $red;
+
+// LOADER
+$bgLoader: $lBlack3;
+$strokeLoader: $white;
+
+$widthLoader: 100px;
+
+// GLOBAL FONTS
+$ftRegular: arial, sans-serif;
+
+$Knockout-H30: 'Knockout-H30', $ftRegular;
+$Knockout-H48: 'Knockout-H48', $ftRegular;
+$Knockout-H72: 'Knockout-H72', $ftRegular;
+
+$fontFamily: $Knockout-H30;
+$baseFont: 16;
+
+// MODAL
+$bgModal: $lBlack3;
+$maxWModal: 410px;
+$minHModal: auto;
+$maxHModal: 550px;
+
+// HAMBURGER BTN
+$acSizeHam: false;
+$sizeHam: 80px;
+$bgHam: transparent;
+$colorBarHam: $black;
+$widthBarHam: 24px;
+$heightBarHam: 2px;
+$radiusBarHam: 2px;
+$spaceBar: $heightBarHam + 3px;

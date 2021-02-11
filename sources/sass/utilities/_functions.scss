@@ -1,0 +1,7 @@
+/* FUNCTIONS */
+
+// PX TO REM
+@function toRem($size){
+	$newSize: ($size / $baseFont) + rem;
+	@return $newSize;
+}

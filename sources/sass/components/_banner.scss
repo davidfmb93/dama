@@ -1,0 +1,25 @@
+/* BANNER */
+
+.banner {
+    @include flex;
+    @extend %width100;
+    &__scroll {
+        @include flex;
+        @extend %width100;
+        max-width: 100px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &__text {
+            font-family: $Knockout-H72;
+            text-transform: uppercase;
+            @extend %xsText;
+        }
+        &__icon {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url('../img/icons/arrow--doubleBlack.svg') no-repeat center;
+            background-size: contain;
+        }
+    }
+}

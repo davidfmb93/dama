@@ -1,0 +1,61 @@
+/* ANIMATIONS */
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+}
+
+@keyframes dashLoader {
+	0% {
+	  stroke-dasharray: 1, 200;
+	  stroke-dashoffset: 0;
+	}
+	50% {
+	  stroke-dasharray: 89, 200;
+	  stroke-dashoffset: -35px;
+	}
+	100% {
+	  stroke-dasharray: 89, 200;
+	  stroke-dashoffset: -124px;
+	}
+}
+
+@keyframes arrow {
+	0% {
+		transform:translate(0px,0px);
+	}
+	50% {
+		transform:translate(0px,-5px);
+	}
+	100% {
+		transform:translate(0px,0px);
+	}
+}
+
+// SPINNER QR
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		transform: scale(0);
+	} 40% { 
+		transform: scale(1.0);
+	}
+}
+
+
+
+// REMOVE LATER
+@keyframes bg{
+	0% {
+		background: var(--demo-bg-1);
+	}
+	50% {
+		background: var(--demo-bg-2);
+	}
+	100% {
+		background: var(--demo-bg-3);
+	}
+}

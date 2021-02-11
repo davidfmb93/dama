@@ -1,0 +1,51 @@
+    /* MADE BY MC */
+
+/* BASE */
+@import 'base/config';
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/general';
+@import 'base/back';
+
+
+/* UTILITIES */
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/animations';
+@import 'utilities/text';
+@import 'utilities/placeholders';
+@import 'utilities/states';
+
+
+/* LIBRARIES */
+// @import 'libraries/animateCSS';
+// @import 'libraries/gridBootstrap';
+
+
+/* COMPONENTS */
+@import 'components/demo';
+@import 'components/loader';
+@import 'components/alert';
+@import 'components/modal';
+@import 'components/boxes';
+@import 'components/accordion';
+@import 'components/tabs';
+// @import 'components/icons';
+// @import 'components/tables';
+// @import 'components/select';
+// @import 'components/carousel';
+@import 'components/banner';
+@import 'components/buttons';
+@import 'components/forms';
+
+
+/* LAYOUT */
+@import 'layout/layout';
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+/* PAGE */
+// @import 'pages/login';
+// @import 'pages/home';

@@ -1,0 +1,53 @@
+/* MODAL */
+
+.modal {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: $bgModal;
+	position: fixed;
+	top: 0;
+	left: 0;
+	@include transition;
+	z-index: 3000;
+	@include mq(mob) {
+		@include flex;
+	}
+	&__container {
+		@include flex;
+		width: calc(100% - 40px);
+		max-width: $maxWModal;
+		height: auto;
+		min-height: $minHModal;
+		max-height: $maxHModal;
+		// padding: 10px;
+		padding: 20px;
+		padding-top: 40px;
+		font-size: toRem(15);
+		text-align: center;
+		position: relative;
+		&--invisible {
+			background: transparent;
+		}
+	}
+	&__content {
+		// height: 400px;
+		// overflow-y: auto;
+	}
+	&__title {
+		width: 100%;
+	}
+	&__close {
+		@include flex;
+		width: 20px;
+		height: 20px;
+		font-size: toRem(40);
+		color: $red;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		// top: 10px;
+		// right: 10px;
+		cursor: pointer;
+	}
+}

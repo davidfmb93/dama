@@ -1,0 +1,96 @@
+/* PLACEHOLDERS */
+
+// WIDTH
+%width100 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%paddingLimit {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+%widthLimit {
+    @extend %width100;
+    max-width: $widthLimit;
+    @extend %paddingLimit;
+}
+
+// HIDE INPUTS TYPE CHECKBOX AND RADIO
+%hideCheckbox {
+	display: block;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+// CENTER POSITION
+%centerPos {
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+// TEXT
+
+%configText {
+    @extend %width100;
+    line-height: 1.1;
+    text-align: center;
+}
+
+%title {
+    @extend %configText;
+    font-size: toRem(20);
+}
+
+%mTitle {
+    @extend %configText;
+    font-size: toRem(24);
+}
+
+%lTitle {
+    @extend %configText;
+    font-size: toRem(30);
+}
+
+%xxxsText {
+    @extend %configText;
+    font-size: toRem(8);
+}
+
+%xxsText {
+    @extend %configText;
+    font-size: toRem(10);
+}
+
+%xsText {
+    @extend %configText;
+    font-size: toRem(12) !important;
+}
+
+%sText {
+    @extend %configText;
+    font-size: toRem(14) !important;
+}
+
+%text {
+    @extend %configText;
+    font-size: toRem(16);
+}
+
+%mText {
+    @extend %configText;
+    font-size: toRem(18);
+}
+
+%lText {
+    @extend %configText;
+    font-size: toRem(20);
+}
