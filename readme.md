@@ -1,7 +1,5 @@
 # FRONT TEMPLATE
 
-### Desarrollado por: Manuel Castro y David Martinez
-
 This is an useful web template for development of impressive websites.
 
 ## STARTING 🚀
