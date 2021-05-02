@@ -1,4 +1,4 @@
-# FRONT TEMPLATE
+# DAMA
 
 This is an useful web template for development of impressive websites.
 
@@ -41,13 +41,13 @@ production (minified files)
 
  - Node Js
  - Webpack
+ - TS
  - SASS
  - JavaScript
 
 ### Version 📌
 
-version 1
+version 2.0
 
-### Autor ✒️
-
-MC
+### CONTRIBUTORS
+David Martinez, Manuel Castro
