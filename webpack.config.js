@@ -1,6 +1,8 @@
 const path = require('path'),
-    miniCssExtractPlugin = require('mini-css-extract-plugin'),
+    MiniCssExtractPlugin = require('mini-css-extract-plugin'),
     BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
+    Autoprefixer = require('autoprefixer'),
+    PostcssCustomProperties = require('postcss-custom-properties'),
     JavaScriptObfuscator = require('webpack-obfuscator');
 
 module.exports = {
@@ -13,6 +15,43 @@ module.exports = {
         use:  [ 'ts-loader'], // aca quede "sass-loader"   "style-loader", "css-loader"
         exclude: /node_modules/,
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                  publicPath: '/dist/css/',
+              }
+          },
+          {
+              loader: 'css-loader',
+              options: {
+                  url: false,
+                  importLoaders: 1,
+                  sourceMap: true
+              }
+          },
+          {
+              loader: 'postcss-loader',
+              options: {
+                  autoprefixer: {
+                      browser: [ 'last 2 versions' ]
+                  },
+                  soruceMarp: true,
+                  // plugins: () => [ autoprefixer ]
+                  plugins: () => [ Autoprefixer, PostcssCustomProperties ]
+              }
+          },
+          {
+              loader: 'sass-loader',
+              options: {
+                  sourceMap: true
+              }
+          }
+        ],
+      },
     ],
   },
   resolve: {
@@ -21,19 +60,20 @@ module.exports = {
 
   },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
+    filename: 'js/main.js',
   },
   plugins: [
-    // new miniCssExtractPlugin({
-    //     filename: 'css/main.css'
-    // }),
+    new MiniCssExtractPlugin({
+      filename: 'css/style.css'
+  }),
     new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
         files: ['./dist/*.html', './dist/css/*.css', './dist/*.js'],
         server: { baseDir: ['dist'] }
     }),
+
     // new JavaScriptObfuscator ({
     //     rotateUnicodeArray: true
     // })
