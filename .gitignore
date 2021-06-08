@@ -12,6 +12,7 @@ public_html/css/maps
 .DS_Store
 .DS_Store?
 ._*
+dist
 .Spotlight-V100
 .Trashes
 ehthumbs.db

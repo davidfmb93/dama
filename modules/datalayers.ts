@@ -1,5 +1,4 @@
-const project = "base"
-const { layers } = require(`/src/${project}/js/config/datalayers.ts`)
+const { layers } = require(`/src/js/config/datalayers.ts`)
 
 declare global {
     interface Window {
