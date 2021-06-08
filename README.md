@@ -50,4 +50,4 @@ production (minified files)
 version 2.0
 
 ### CONTRIBUTORS
-David Martinez, Manuel Castro
+Manuel Castro, David Martinez
