@@ -1,4 +1,4 @@
-const project: string = "base"
+const project: string = ""
 // IMPORT SASS
 require(`/src/${project}/sass/main.scss`)
 // IMPORT ROUTES 
