@@ -1,6 +1,7 @@
 const project: string = ""
 // IMPORT SASS
-require(`/src/${project}/sass/main.scss`)
+// require(`/src/${project}/sass/main.scss`)
+require(`/src/sass/main.scss`)
 // IMPORT ROUTES 
 const { routes } = require(`/src/${project}/js/config/routes.ts`)
 

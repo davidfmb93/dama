@@ -14,7 +14,6 @@ $widthLoader: 		100px;
 	@include flex;
 	@include square(viewport);
 	background: $bgLoader;
-	// @include position(fixed, 0, $l: 0);
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +22,6 @@ $widthLoader: 		100px;
 	&__container {
 		width: $widthLoader;
 		margin: 0 auto;
-		// @include position(relative);
         position: relative;
 	}
 	&__content {

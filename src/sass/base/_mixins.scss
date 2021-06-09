@@ -10,12 +10,12 @@
 			}
 		}
 	} @else {
-		@if type-of(map-get($mediaqueries,$media)) == number {
-			@media only screen and (#{$type}-width: map-get($mediaqueries,$media) + px){
+		@if type-of(map-get($mediaqueries, $media)) == number {
+			@media only screen and (#{$type}-width: map-get($mediaqueries, $media) + px){
 				@content;
 			}
-		} @else if type-of(map-get($mediaqueries,$media)) == string {
-			@media #{map-get($mediaqueries,$media)}{
+		} @else if type-of(map-get($mediaqueries, $media)) == string {
+			@media #{map-get($mediaqueries, $media)}{
 				@content;
 			}
 		}
