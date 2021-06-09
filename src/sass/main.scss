@@ -1,4 +1,29 @@
-    /* MADE BY MC */
+/***************/
+/* MADE BY MC  */
+/***************/
+
 
 /* BASE */
-@import 'page/dama';
+@import 'base/config';
+@import 'base/fonts';
+@import 'base/general';
+
+
+/* UTILITIES */
+@import 'utilities/mixins';
+@import 'utilities/animations';
+@import 'utilities/placeholders';
+@import 'utilities/states';
+@import 'utilities/text';
+
+
+/* COMPONENTS */
+// @import 'components/temporal'
+
+
+/* LAYOUT */
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/layout';

@@ -1,0 +1,13 @@
+/** CONTAINER **/
+
+
+// CONTAINER
+.container {
+	@extend %width100;
+	&--general {
+		overflow: hidden;
+	}
+	&--limit {
+		@extend %widthLimit;
+	}
+}

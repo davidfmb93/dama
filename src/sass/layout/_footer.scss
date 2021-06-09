@@ -1,0 +1,11 @@
+/** FOOTER **/
+
+
+// FOOTER
+.footer {
+	@extend %width100;
+	&__container {
+		@extend %widthLimit;
+		height: auto;
+	}
+}
