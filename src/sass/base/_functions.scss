@@ -1,0 +1,9 @@
+/** FUNCTIONS **/
+
+
+// PX TO REM
+// Transform a Pixels value to Rem
+@function toRem($size){
+	$newSize: ($size / $baseFont) + rem;
+	@return $newSize;
+}
