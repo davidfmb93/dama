@@ -1,15 +1,13 @@
-const project: string = ""
 // IMPORT SASS
-require(`/src/${project}/sass/main.scss`)
-// require(`/src/sass/main.scss`)
+require(`/src/sass/main.scss`)
 // IMPORT ROUTES 
-const { routes } = require(`/src/${project}/js/config/routes.ts`)
+const { routes } = require(`/src/js/config/routes.ts`)
 
 let route: any = routes.find((item: any) => window.location.pathname == item.path)
 
-require(`/src/${project}/js/services/general.ts`).page()
+require(`/src/js/services/general.ts`).page()
 require(`/modules/datalayers.ts`)
-route ? require(`/src/${project}/js/components/` + route.component + '.ts').page() : routeDontFound()
+route ? require(`/src/js/components/` + route.component + '.ts').page() : routeDontFound()
 /**
  * dinamicRoutes
  * 
@@ -34,5 +32,5 @@ function dinamicRoutes(){
  */
 function routeDontFound(){
   const dinamic: any = dinamicRoutes();
-  dinamic.status && require(`/src/${project}/js/components/${dinamic.route.component}.ts`).page()
+  dinamic.status && require(`/src/js/components/${dinamic.route.component}.ts`).page()
 }
