@@ -35,6 +35,10 @@
 		justify-content: center;
 		align-items: flex-start;
 		align-content: flex-start;
+	} @else if $option == noCenter {
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
 	} @else {
 		justify-content: $jc;
 		align-items: $ai;

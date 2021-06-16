@@ -6,5 +6,5 @@
 // const api = new apiDrupal();
 export const page = async () => {
     /* ON LOAD */
-    console.log('Dama: Desarrollado pro 150%')
+    console.log('Dama: Desarrollado por 150%')
 }

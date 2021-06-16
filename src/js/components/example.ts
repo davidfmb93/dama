@@ -15,9 +15,7 @@ const api = new apiService();
 const dm = new dama();
 
 export const page = async () => {
-  console.log('Api:', api.example())
-  console.log('Dama:', dm.welcome())
+	console.log('Home')
+	console.log('Api:', api.example())
+	console.log('Dama:', dm.welcome())
 }
-
-
-

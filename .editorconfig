@@ -4,6 +4,6 @@
 root = true
 
 # Tab indentation (no size specified)
-[*.html]
+[*]
 indent_style = tab
 indent_size = 4

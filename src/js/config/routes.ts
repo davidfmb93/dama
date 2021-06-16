@@ -1,7 +1,12 @@
 export const routes = [
     {
         name: 'index',
-        path: '/',
+        path: ['/', '/index.html'],
         component: 'example'
     },
+    {
+        name: 'test',
+        path: '/page-ex.html',
+        page: 'pageEx'
+    }
 ]
